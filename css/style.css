@@ -1,0 +1,339 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color:#f6f9f9;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.hero{
+background-image: url(../images/banner.png);
+
+background-position: center;
+
+background-repeat: none;
+
+background-size: cover;
+text-align: center;
+}
+
+.hero h1{
+  
+color: #ffff;
+  
+font-weight: 500;
+  
+/* text-align: justify; */
+  
+text-transform: uppercase;
+}
+.height{
+
+  min-height: 90vh;
+}
+
+.icon{
+
+left:50%;
+bottom: 100px;
+position: absolute;
+transform: translate(-50%);
+animation: up-down 4s infinite;
+animation-duration:alternate;
+}
+.icon i{ 
+color: #fff;
+  font-size: 20px;
+}
+
+@keyframes up-down{
+  0%{
+    top:80%
+  }
+  100%{
+    top: 90%
+
+  }
+  
+}
+
+.who_we_are{
+
+padding: 100px;
+}
+
+.who_we_are h2{
+  
+color: #204f87;
+  
+font-size: 35px;
+  
+text-transform: uppercase;
+  
+margin: 15px 0;
+}
+
+.who_we_are span{
+  
+display: block;
+  
+background: #;
+  
+width: 50px;
+  
+/* border: 2px solid; */
+  
+height: 3px;
+  
+background: #f2632c;
+}
+
+.who_we_are p{
+  
+color: #b0b0b1;
+  
+font-size: 14px;
+}
+.what_we_do{
+padding: 50px 0;
+position: relative;
+}
+
+.what_we_do::before{
+  content: " ";
+  background-image: url(../images/we_do_bg.png);
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: 0;
+  background-position: right bottom;
+  background-size: 80%;
+  background-size: 95%;
+}
+
+
+
+.what_we_do span{
+  
+display: black;
+  
+display: block;
+  
+height: 3px;
+  
+width: 50px;
+  
+background: #f2632c;
+  
+margin: auto;
+}
+.what_we_do h1{
+  
+/* color: red; */
+  
+color: #204f87;
+  
+font-size: 35px;
+  
+text-transform: uppercase;
+  
+margin: 15px 0;
+  
+text-align: center;
+  
+margin-bottom: 50px;
+}
+.item{
+
+position: relative;
+}
+.item::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,28377e+53&0+0,1+61 */
+background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(40,55,126,0.87) 53%, rgba(40,55,126,1) 61%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(40,55,126,0.87) 53%,rgba(40,55,126,1) 61%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(40,55,126,0.87) 53%,rgba(40,55,126,1) 61%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+transition: .4s all ease-in-out;
+}
+
+.item:hover::before{
+
+  height: 100%;
+}
+.content{
+position: absolute;
+left: 50%;
+top: 60%;
+transform: translate(-50%, -50%);
+opacity: 0;
+transition: .4s all ease-in-out;
+}
+.item:hover .content{
+  opacity: 1;
+  top: 50%;
+  
+}
+
+
+.content h1{
+  
+color: #ffff;
+  
+font-size: 25px;
+}
+.icons{
+
+left: 45%;
+
+bottom: 50px;
+
+position: absolute;
+
+transform: translateX(-50%);
+
+color: #ffff;
+
+font-size: 22px;
+opacity: 0;
+transition: .4s all ease-in-out;
+}
+.item:hover .icons{
+  opacity: 1;
+  left: 50%;
+}
+
+
+
+
+
+.attorney_section{
+	background-image: url(../images/atorney_bg.png);
+	background-size: cover;
+	padding: 150px 0 150px;
+	position: relative;
+	/* line-height: 50; */
+}
+
+.attorney_section h1{
+
+color: #ffff;
+
+font-size: 40px;
+
+font-weight: 500px;
+
+margin: 10px 0;
+}
+.attorney_section span{
+  display: block;
+  height: 3px;
+  width: 21%;
+  background: #ff3e01;
+}
+.attorney_section p{
+  color: #a3a0cc;
+}
+.see-more{
+  text-decoration: none;
+  color: #ff4f18;
+  font-size: 20px;
+  font-weight: 700px;
+  font-weight: 600px;
+  font-weight: 700;
+}
+.items{
+
+position: relative;
+}
+.text{
+
+position: absolute;
+
+bottom: 30px;
+
+left: 30px;
+
+/* transform: translate(-25px); */
+
+color: #ffff;
+
+
+}
+.text h1{
+
+
+}
+
+.language{
+
+}
+.language span{
+  
+display: block;
+  
+background: red;
+  
+height: 3px;
+  
+width: 6%;
+  
+margin: auto;
+}
+.language h1{
+
+color: #36226f;
+
+font-size: 35px;
+}
+.language p{
+
+color: #bab5b3;
+
+font-size: 16px;
+}
+.language a{
+
+text-decoration: none;
+
+color: #f23e05;
+
+font-size: 16px;
+
+font-weight: 600;
+}
+.contact-us{
+  background-color: #36226f;
+
+}
+
+
+.contact-us span{
+  
+}
+.contact-us h1{
+  
+padding: 20px 0;
+}
+
+.btn-custom{
+
+}
+.form-group input{
+
+background: transparent;
+
+border: none;
+}
